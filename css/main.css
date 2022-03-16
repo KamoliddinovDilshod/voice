@@ -1,0 +1,84 @@
+body{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  background-color: white;
+  opacity: 0.8;
+  padding: 20px 50px;
+}
+
+.site__btn{
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.box{
+  position: relative;
+  z-index: -1;
+  margin: 0;
+}
+
+.box__img{
+  width: 100%;
+}
+
+.box__car{
+  position:  absolute;
+  top: 620px;
+  left: -73px;
+}
+
+.box__human{
+  position: absolute;
+  z-index: 1;
+  top: 48%;
+  right: 335px;
+  width: 150px;
+}
+
+.box__car-anim{
+  position:  absolute;
+  top: 620px;
+  left: -73px;
+  animation: anim 5s;
+}
+
+@keyframes anim {
+  from {left: 0px;}
+  to {left: 1090px;}
+}
+
+.box__car-yellow{
+  position:  absolute;
+  top: 620px;
+  left: -73px;
+  animation: yellow 5s infinite;
+}
+
+@keyframes yellow {
+  from {left: 0px;}
+  to {left: 50px;}
+}
+
+.box__human-anim{
+  position:  absolute;
+  top: 48%;
+  right: 335px;
+  animation: man 15s;
+  animation-direction: reverse;
+}
+
+@keyframes man {
+  0%  {right: 0px; top: 48%;}
+  25% {right: 0px; top: 75%;}
+}
